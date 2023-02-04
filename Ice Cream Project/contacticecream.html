@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Contact Me With Your Favorite Flavor and What Makes it so Great!</title>
+	<link rel="stylesheet" type="text/css" href="icecream.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ul>
+    <li> <a href="icecreammain.html">Home</a></li>
+    <li> <a href="vanilla.html">Vanilla Flavors</a></li>
+    <li> <a href="chocolate.html">Chocolate Flavors</a></li>
+    <li> <a href="strawberry.html">Strawberry Flavors</a></li>
+    <li> <a href="icemap.html">Find Ice Cream Near You!</a></li>
+    <li> <a href="contacticecream.html">Contact</a></li>
+    <li> <a href="icecreamquiz.html">Survey</a></li>
+  </ul>
+</body>
+<br> 
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Flavor">Flavor</label>
+    <select id="Flavor" name="Flavor">
+      <option value="Chocolate">Chocolate</option>
+      <option value="Vanilla">Vanilla</option>
+      <option value="Strawberry">Strawberry</option>
+      <option value="Just to test it out for fun">Testing out for Fun</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</html>

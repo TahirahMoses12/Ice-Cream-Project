@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Strawberry Ice Cream </title>
+	<link rel="stylesheet" type="text/css" href="icecream.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+	<script>
+	function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote2(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll2").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote2.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote3(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll3").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote3.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote4(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll4").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote4.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote5(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll5").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote5.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+</head>
+
+<body>
+	<ul>
+		<li> <a href="icecreammain.html">Home</a></li>
+		<li> <a href="vanilla.html">Vanilla Flavors</a></li>
+		<li> <a href="chocolate.html">Chocolate Flavors</a></li>
+		<li> <a href="strawberry.html">Strawberry Flavors</a></li>
+		<li> <a href="coffee.html"> Coffee Flavors</a></li>
+		<li> <a href="icemap.html">Find Ice Cream Near You!</a></li>
+		<li> <a href="contacticecream.html">Contact</a></li>
+		<li> <a href="icecreamquiz.html">Survey</a></li>
+	</ul>
+	<br> </br>
+	<h1> Strawberry IceCream Rankings </h1>
+</body>
+
+<h2> The Top 5 Best Strawberry Ice Cream </h2>
+
+<ol> 
+
+<div class="center">
+	<img src="Tillamookstraw.jpg" alt="Tillamookstraw" height = "250" width = "400">
+</div>
+	<li>Tillamook Oregon Strawberry Ice Cream</li>
+	<p> According to <a href = "https://www.yahoo.com/lifestyle/tried-6-brands-strawberry-ice-164819438.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAABKL7BwHny-jpQ8tU3dTfOIPFsxNmBqhyXQ7amPpvlyp57pjer7XaUXoYuGfxf0VPilNfkP89l-wc48qUXXCOqqr7SVTLnPeu-L4_X5C_WAPGW98Eaqpm6Gxek12Q4rICoTBdj9FBH0C7-MnrBbqQ8PaSSytCGbLvBBcNolWZp_o" title = "Yahoo Life">Yahoo Life,</a> Tillamook Oregon Strawberry Ice Cream flavor-wise was very close to Häagen-Dazs but has a fluffier consistency and more of a milkshake-like flavor. </p>
+
+	<div id="poll">
+<h3>Do you like Tillamook Oregon Strawberry Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Haagenstraw.jpg" alt="Haagenstraw" height = "250" width = "400" >
+</div>
+	<li>Häagen-Dazs</li>
+	<p> Through a bit of cross-referencing it was shown that Häagen-Dazs Strawberry Ice Cream definitely held its own among the rest. According to myrecipes and yahoo this ice cream is very decadent and has just the right amount of strawberry flavor. One review said that it is similar to one you would find in an ice cream parlor. </p>
+
+	<div id="poll2">
+<h3>Do you like Haagen-Dazs Strawberry IceCream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote2(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote2(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Breyersstraw.jpg" alt="Breyersstraw" height = "250" width = "400" >
+</div>
+	<li> Breyer's Strawberry Ice Cream </li>
+	<p> According, to reviews from Walmart and Target Breyers Strawberry Ice Cream is rich and creamy. You can tell they ise fresh ingredients and the taste does not disappoint. However, for those that want the fresh strawberry ingredients throughout this may not be the one for you. </p>
+
+	<div id="poll3">
+<h3>Do you like Breyer's Strawberry Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote3(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote3(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Halostraw.jpg" alt="Halostraw" height = "250" width = "400" >
+</div>
+	<li> Halo Top Strawberry Ice Cream </li>
+	<p> After reading multiple reviews I have concluded that this ice cream is the perfect fit for those who want some semblence of an ice cream flavor but not one that is too strong. From the reviews Halo Top tastes more like a strawberry milkshake than having the actual decadence of the ice cream. But for a company that wants to take a healthy spin on the classic treat the flavors do not disappoint. So, if you feel like being healthy or are even maybe trying to switch up your diet but want to enjoy comfort without completley cheating this would be the ice cream for you. </p>
+
+	<div id="poll4">
+<h3>Do you like Halo Top Strawberry Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote4(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote4(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Cheesestraw.jpg" alt="Cheesestraw" height = "250" width = "400" >
+</div>
+	<li> Cheesecake Factory Strawberry Ice Cream </li>
+	<p> So, this may come as a shock to many. But yes, Cheesecake Factory has been selling ice cream. If you're like me and only either recently found this out through this list or even just happened to stumble upon it, let me tell you we've been missing out. Now, this is not a traditional strawberry ice cream it's more like a strawberry cheescake ice cream. But don't let that fool you the strawberry flavor really shines through well with the cheesecake factor. Even though this ice cream is a bit on the pricy end for most reviewers the price is completley worth it. So why not give it a shot? </p>
+
+	<div id="poll5">
+<h3>Do you like Cheesecake Factory Strawberry Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote5(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote5(this.value)">
+</form>
+</div>
+
+</ol>
+</html>
+

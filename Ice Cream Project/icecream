@@ -1,0 +1,14 @@
+body
+{
+	background-color: #edb879;
+}
+.column{
+	float: left;
+	width: 30%;
+	padding: 6px;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}

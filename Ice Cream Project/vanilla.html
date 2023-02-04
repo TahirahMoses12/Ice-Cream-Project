@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Vanilla Ice Cream </title>
+	<link rel="stylesheet" type="text/css" href="icecream.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+<script>
+	function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote2(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll2").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote2.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote3(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll3").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote3.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote4(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll4").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote4.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote5(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll5").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote5.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+
+<body>
+	<ul>
+		<li> <a href="icecreammain.html">Home</a></li>
+		<li> <a href="vanilla.html">Vanilla Flavors</a></li>
+		<li> <a href="chocolate.html">Chocolate Flavors</a></li>
+		<li> <a href="strawberry.html">Strawberry Flavors</a></li>
+		<li> <a href="coffee.html"> Coffee Flavors</a></li>
+		<li> <a href="icemap.html">Find Ice Cream Near You!</a></li>
+		<li> <a href="contacticecream.html">Contact</a></li>
+		<li> <a href="icecreamquiz.html">Survey</a></li>
+	</ul>
+	<br>
+	<h1> Vanilla IceCream Rankings </h1>
+</body>
+
+<h2> The Top 5 Best Classic Vanilla </h2>
+
+<ol>
+
+<div class="center">
+	<img src="Tillamookvan2.jpg" alt="Tillamookvan" height = "250" width = "400" >
+</div>
+    <li> Tillamook Old-Fashioned Vanilla </li>
+	<p> According to <a href = "https://www.eatthis.com/best-store-bought-vanilla-ice-cream-taste-test/" title="link to eat this not that">Eat this! Not that!</a> The texture of this Tillamook Ice Cream is very soft and reminds one of what they might get in an ice cream shop, the ice cream feels like it has been whipped giving it a marshmellowy feeling. </p>
+
+<div id="poll">
+<h3>Do you like Tillamook Old-Fashioned Vanilla?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+
+<div class="center">
+    <img src="Haagenvan.jpg" alt="Tillamookvan" height = "250" width = "400" > 
+</div>
+	<li> Häagen-Dazs Vanilla Bean IceCream </li>
+	<p> Through a mixture of reviews I have come conclude that Häagen-Dazs Vanilla IceCream has a remarkably strong vanilla flavor due to the ground vanilla beans churned inside of the ice cream. Not only is this ice cream smooth and creamy, it provides a richness that you won't be able to experience in most other ice creams, allowing for a different experince. </p>
+
+	<div id="poll2">
+<h3>Do you like Haagen-Dazs Vanilla Bean IceCream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote2(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote2(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Edysvan.jpg" alt="Tillamookvan" height = "250" width = "400" >
+</div>
+	<li> Edy's Vanilla Ice Cream </li>
+	<p> This ice cream is deliciously creamy and bound to be a crowd pleaser. Edy's provides the classic nostalgia of vanilla ice cream one that reminds you of sitting down with family and friends enjoying one another's company. For a blast to the past or even to create some fun memories this ice cream will definitely do the trick. </p>
+
+	<div id="poll3">
+<h3>Do you like Edy's Vanilla Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote3(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote3(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Breyersvan.jpg" alt="Tillamookvan" height = "250" width = "400"  >
+</div>
+	<li> Breyers Vanilla Ice Cream </li>
+	<p> Breyers Vanilla Ice Cream has a subtle natural taste. With ingredients that won't do you a disservice. It's less decadent than it's Vanilla Bean counterpart but the taste is garunteed not to disappoint. If you would like to enjoy a lightly flavored vanilla cold treat this may be one of the ice creams for you. </p>
+
+	<div id="poll4">
+<h3>Do you like Breyers Vanilla Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote4(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote4(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Vanvan.jpg" alt="Tillamookvan" height = "250" width = "400" >
+</div>
+	<li> Van Leeuwen Vanilla Ice Cream </li>
+	<p>So, I must start out by saying that this ice cream is handmade in Brooklyn, New York. It has a creamy and artisinal texture. One would not be disappointed in the flavor that this ice cream has to offer. Not only that but Van Leeuwen's is also vegan so for those that don't normally eat ice cream due to their dietary restrictions this is something that everyone can enjoy! </p>
+
+	<div id="poll5">
+<h3>Do you like Van Leeuwen Vanilla Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote5(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote5(this.value)">
+</form>
+</div>
+
+</ol>
+</html>
+
+

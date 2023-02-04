@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Chocolate Ice Cream </title>
+	<link rel="stylesheet" type="text/css" href="icecream.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+	<script>
+	function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote2(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll2").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote2.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote3(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll3").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote3.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote4(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll4").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote4.php?vote="+int,true);
+  xmlhttp.send();
+}
+function getVote5(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll5").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote5.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+</head>
+
+<body>
+	<ul>
+    <li> <a href="icecreammain.html">Home</a></li>
+    <li> <a href="vanilla.html">Vanilla Flavors</a></li>
+    <li> <a href="chocolate.html">Chocolate Flavors</a></li>
+    <li> <a href="strawberry.html">Strawberry Flavors</a></li>
+    <li> <a href="icemap.html">Find Ice Cream Near You!</a></li>
+    <li> <a href="contacticecream.html">Contact</a></li>
+    <li> <a href="icecreamquiz.html">Survey</a></li>
+  </ul>
+	<br>
+	<h1> Chocolate IceCream Rankings </h1>
+</body>
+
+<h2> The Top 5 Best Chocolate Ice Cream </h2>
+<ol>
+<div class= "center">
+	<img src="Breyerschoc.jpg" alt="Breyerschoc" height="250" width="400">
+</div>
+
+	<li> Breyers Chocolate Ice Cream </li>
+	<p> According to <a href = "https://www.myrecipes.com/taste-tests/chocolate-ice-cream-taste-test" title = "myrecipes">myrecipes</a> Breyers Chocolate Ice Cream was soft and fluffy as well as having a great chocolate taste without it being to overpowering. At the end of their tasting it was the one with the least amount of ice cream left. </p>
+
+	<div id="poll">
+<h3>Do you like Breyers Chocolate Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+
+<div class= "center">
+	<img src="Haagenchoc.jpg" alt="Haagenchoc" height = "250" width = "400">
+</div>
+	<li> Häagen-Dazs Chocolate IceCream </li>
+	<p> According to <a href = "https://www.myrecipes.com/taste-tests/chocolate-ice-cream-taste-test" title = "myrecipes">myrecipes</a> this ice cream has a very creamy texture. For those not seeking a strong decadent chocolate taste but instead the subtulties chocolate has to offer this is an ice cream for them. </p>
+
+	<div id="poll2">
+<h3>Do you like Haagen-Dazs Chocolate IceCream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote2(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote2(this.value)">
+</form>
+</div>
+
+<div class= "center">
+	<img src="Jenichoc.jpg" alt="Jenichoc" height = "250" width = "400" >
+</div>
+	<li> Jeni's Darkest Chocolate Ice Cream </li>
+	<p> It has a decadent taste and has a bit of a richer chocolate taste rather than being too subtle. It is the perfect in between for those that want a true chocolate taste without it being too overpowering or too subtle. It is what one might call "just right".</p>
+
+	<div id="poll3">
+<h3>Do you like Jeni's Darkest Chocolate Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote3(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote3(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Edyschoc.jpg" alt="Edyschoc" height = "250" width = "400" >
+</div>
+	<li> Edy's Chocolate Ice Cream </li>
+	<p> Interestingly enought through a bit of cross refrencing through different taste testing sites. I found that Edy's Chocolate Ice Cream appeared more often than not to have hugh ratings. Not only is Edy's a bang for your buck. It can cost anywhere from $4-$7 depending on where you shop. However, the ice cream sports a rich and creamy texture with a delightful strong chocolate punch to help it along. </p>
+
+	<div id="poll4">
+<h3>Do you like Edy's Chocolate Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote4(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote4(this.value)">
+</form>
+</div>
+
+<div class="center">
+	<img src="Bluechoc.jpg" alt="Bluechoc" height = "250" width = "400" >
+</div>
+	<li> Blue Bunny </li>
+	<p> Compared to other ice creams this one has a deep chocolate flavor. And accorfing to <a href = "https://www.tasteofhome.com/article/we-taste-tested-10-common-chocolate-ice-cream-brands-to-find-the-best/" title = "tasteofhome">tasteofhome</a> this ice cream has a slightly chalky aftertaste which could possibly be from cocoa powder. However, this ice cream is still as smooth and creamy as its competition holding its own. </p>
+
+	<div id="poll5">
+<h3>Do you like Blue Bunny Chocolate Ice Cream?</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote5(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote5(this.value)">
+</form>
+</div>
+
+</ol>
+</html>
